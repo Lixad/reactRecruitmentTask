@@ -1,0 +1,45 @@
+.wrapper {
+  position: relative;
+  padding: 25px 15px;
+  min-width: 340px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 17, 34, 0.1);
+  border-radius: 2px;
+  background-color: rgba(246, 246, 246, 0.2);
+  cursor: pointer;
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
+  margin-right: 8px;
+  opacity: 0.3;
+}
+
+.wrapper:hover {
+  background-color: rgb(246, 246, 246);
+}
+
+.wrapper:hover .edit-wrapper {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.edit-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: 0.3s;
+}

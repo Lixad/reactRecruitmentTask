@@ -1,0 +1,75 @@
+.modal-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 17, 34, 0.6);
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.active .modal-back {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
+}
+
+.modal-wrapper {
+  position: relative;
+  width: 440px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 23px;
+  opacity: 0.3;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 16px 0;
+  color: rgba(0, 17, 34, 0.8)
+}
+
+.m-t-15 {
+  margin-top: 15px
+}
+
+.desc-title {
+  display: block;
+  margin: 20px 0 0;
+  font-weight: 700;
+}
+
+.desc {
+  margin: 0 0 15px;
+}
+
+.btn {
+  float: right;
+  padding: 4px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.715;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(55, 178, 77);
+  cursor: pointer;
+}
